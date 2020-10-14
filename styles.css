@@ -1,8 +1,29 @@
 #title {
     text-align: center;
     font-family: sans-serif;
-    color: white;
+    color: rgb(224, 218, 218);
+    padding: 20px;
 }
 body{
     background-image: url("image.jpg");
+}
+#box{
+    height: auto;
+    background-color: rgb(38, 104, 67);
+    width: 50%; 
+    padding: 30px 20px 30px 20px;
+    text-align: start;
+    opacity: 0.7;
+    margin: auto;
+    border-radius: 5px;
+}
+#survey-form{
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+}
+.inp-box{
+    border-radius: 5px;
+    padding-right: 70px;
+    width: auto;
 }
