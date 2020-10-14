@@ -7,18 +7,126 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header id="title">
         <h1>freeCodeCamp Survey Form</h1>
-        <p>
+        <p id="description">
             <em>Thank you for taking the time to help us improve the platform</em>
         </p>
     </header>
     <div id="box">
-        <form action="" id="survey-form">
-            <label>Name</label>
+        <div id="survey-form">
+
+            <form id="name" class="form-group">
+                <label for="name">Name</label>
+                <br>
+                <input class="inp-box" type="text" placeholder="Enter name" required>
+            </form>
+
             <br>
-            <input class="inp-box" type="text" placeholder="Enter name">
-        </form>
+
+            <form id="email" class="form-group">
+                <label>Email</label>
+                <br>
+                <input class="inp-box" type="email" placeholder="Enter email" required>
+            </form>
+
+            <br>
+
+            <form id="number" class="form-group">
+                <label>Age
+                    <span>(optional)</span>
+                </label>
+                <br>
+                <input class="inp-box" type="number" placeholder="Enter age" min=10 mix=99>
+            </form>
+
+            <br>
+
+            <form id="dropdown" class="form-group">
+                <label>Which option describes your current role the best?</label>
+                <br>
+                <select class="inp-box" name="role" required>
+                    <option disabled selected value>Select role</option>
+                    <option value="student">Student</option>
+                    <option value="job">I work a full time job</option>
+                    <option value="hobby">I learn as hobby</option>
+                    <option value="hacker">I wanna hacc</option>
+                    <option value="no">Why tf should I tell u?</option>
+                </select>
+            </form>
+            
+            <br>
+
+            <form id="recommend" class="form-group">
+                <p>Would you recommend FCC to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" checked class="inp-radio">
+                        Definitely
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="inp-radio">
+                    IDK, maybe
+                </label>
+                <label>
+                    <input name="user-recommend" value="no" type="radio" class="inp-radio"> 
+                    Nope, ya'll can't teach
+                </label>
+            </form>
+
+            <br>
+
+            <form id="checkbox" class="form-group">
+                <p>What on FCC would you like to see improve?
+                    <span>(Check all that apply)</span>
+                </p>
+                <label>
+                    <input name="improve" value="frontend" type="checkbox" class="inp-chk">
+                    Front-end Projects
+                </label>
+                <label>
+                    <input name="improve" value="backend" type="checkbox" class="inp-chk">
+                    Back-end Projects
+                </label>
+                <label>
+                    <input name="improve" value="challenges" type="checkbox" class="inp-chk">
+                    Challenges
+                </label>
+                <label>
+                    <input name="improve" value="datavis" type="checkbox" class="inp-chk">
+                    Data Visualization
+                </label>
+                <label>
+                    <input name="improve" value="vid" type="checkbox" class="inp-chk">
+                    Videos
+                </label>
+                <label>
+                    <input name="improve" value="forum" type="checkbox" class="inp-chk">
+                    Forum
+                </label>
+                <label>
+                    <input name="improve" value="perfect" type="checkbox" class="inp-chk">
+                    FCC is already perfect :)
+                </label>
+            </form>
+
+            <br>
+
+            <div class="form-group">
+                <p>If you have any other suggestions, feel free to let us know below</p>
+                <textarea id="comments" class="inp-txtarea" name="comment" placeholder="Enter your thoughts here..">
+                </textarea>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+        </div>    
     </div>
-</body>
+</body> 
 </html>

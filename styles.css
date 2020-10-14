@@ -5,25 +5,67 @@
     padding: 20px;
 }
 body{
-    background-image: url("image.jpg");
+    background-image: url("pexels-pixabay-270360.jpg");
+    background-position: unset;
+    background-size: auto;
+    background-attachment: fixed;
 }
 #box{
     height: auto;
-    background-color: rgb(38, 104, 67);
+    background-color: rgb(40, 46, 44);
     width: 50%; 
     padding: 30px 20px 30px 20px;
     text-align: start;
-    opacity: 0.7;
+    opacity: 0.9;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #survey-form{
-    color: white;
-    font-size: large;
-    font-family: sans-serif;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 .inp-box{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+.inp-radio{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.inp-chk{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.form-group{
+    color: white;
+    font-size: 1.125rem;
+    font-family: sans-serif;
+}
+.inp-txtarea{
+    width: 100%;
+    min-height: 110px;
+    resize: vertical;
     border-radius: 5px;
-    padding-right: 70px;
-    width: auto;
+}
+.submit-button{
+    width: 100%;
+    min-height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    background: lightcoral;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
 }
